@@ -1,11 +1,6 @@
 <?php
 include_once("dbconnect.php");
-
-session_start();
-if(isset($_SESSION['email'])){
-header("location:welcome.html");
-
-}
+include("sessioncheck.php");
 
 if(isset($_SERVER['REQUEST_METHOD'])=='POST'){
 
@@ -23,7 +18,7 @@ session_start();
 $_SESSION["email"]=$_POST['email'];
 $_SESSION["password"]=$_POST['password'];
 
-header("location:welcome.html");
+header("location:welcome.php");
 }
 else{
    echo "email and password not correct";

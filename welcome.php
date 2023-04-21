@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>welcome user</h1>
-    <a class="logout"  href="logout.php">Logout</button>
+    <a class="logout"  href="logout.php">Logout</button></a>
       <h1>you are on the main page</h1>  
 </body>
 </html>
